@@ -73,4 +73,17 @@ class Conexion{
     return $cadena;
   }
 
+  /**
+   * RETORNA UNA CONEXION DE DATOS DE LA FENTE EXPECIFICADA
+   */
+
+   public function getData($spName=""):array{
+    try{
+      $cmd = $this->getConexion()->prepare("cal{$spuName}()");
+      $cmd->execute();
+      return $cmd->fetch(PDO::FETCH_ASSOC);
+    }catch(Exception $e){
+      error_log("Error" . $e->getMessage());
+    }
+   }
 }
