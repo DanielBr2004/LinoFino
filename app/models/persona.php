@@ -33,7 +33,7 @@ class Persona extends Conexion{
         }
 
 }
-
+/*
 $persona = new Persona();
 $id = $persona->add([
     "apellidos"     => "Braulio",
@@ -42,4 +42,4 @@ $id = $persona->add([
     "dni"           => "78978974",
     "direccion"     => ""
 ]);
-echo $id;
+echo $id;*/

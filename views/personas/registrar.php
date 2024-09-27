@@ -78,10 +78,17 @@
               </div>
             </div>
             <div class="card-footer text-end">
-              <button type="submit" class="btn btn-sm btn-primary" id="registarPersona">Registrar</button>
+              <div class="row">
+                <div class="col-md-6">
+                  <span id="status" class="d-none"> Buscando por favor espere ....</span>
+                </div>
+                <div class="col-md-6">
+                <button type="submit" class="btn btn-sm btn-primary" id="registarPersona">Registrar</button>
               <button type="submit" class="btn btn-sm btn-secondary" id="registarPersona">Cancelar</button>
               <a href="index.php" class="btn btn-sm btn-outline-secondary">Mostrar lista</a>
-            </div>
+                </div>
+              </div>  
+          </div>
           </div>
         </form>
       </div>
