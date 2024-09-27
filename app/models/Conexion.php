@@ -5,7 +5,7 @@ class Conexion{
   //1. Almacenamos los datos de conexión
   private $servidor = "localhost";
   private $puerto = "3306";
-  private $baseDatos = "cine";
+  private $baseDatos = "linofino";
   private $usuario = "root";
   private $clave = "";
 

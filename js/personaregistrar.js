@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded",()=>{
     console.log("Estoy buscando espérate...")
   }
 
-  $("#formPersonas").addEventListener("submit",(event)=>{
+  $("#formPersonas").addEventListener("submit", async (event)=>{
     event.preventDefault();
-    if(confirm("¿Seguro de proceder?")){
-      console.log("guardado correctamente")
+    if(await ask("¿Estas seguro de guardar?", "Modulo usuarios")){
+        showToast("Guardado correctamente", "SUCCESS")
     }
   });
 

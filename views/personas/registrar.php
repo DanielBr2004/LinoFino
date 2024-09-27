@@ -33,6 +33,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="row g-3 mb-3">
                 <div class="col-md-2">
                   <div class="form-floating">
@@ -42,10 +43,38 @@
                 </div>
                 <div class="col-md-10">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="direccion" placeholder="direccion" required>
+                    <input type="text" class="form-control" id="direccion" placeholder="direccion" >
                     <label for="direccion">direccion</label>
                   </div>
                 </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                  <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="usuario" required>
+                      <label for="usuario">Nombre de Usuario</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="claveacceso" required>
+                      <label for="claveacceso">Clave de Usuario</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-floating">
+                      <select name="perfil" id="perfil" class="form-select" required>
+                        <option value="">Selecionar</option>
+                        <option value="ADM">Administrador</option>
+                        <option value="COL">Colaborador</option>
+                        <option value="SUP">Supervisor</option>
+                      </select>
+                      <label for="perfil">Perfiles de Usuario</label>
+                    </div>
+                  </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
               </div>
             </div>
             <div class="card-footer text-end">
